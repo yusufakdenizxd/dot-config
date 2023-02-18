@@ -1,0 +1,5 @@
+require('benimaru.lazy')
+require('benimaru.set')
+require('benimaru.theme')
+require('benimaru.remap')
+require('benimaru.functions')

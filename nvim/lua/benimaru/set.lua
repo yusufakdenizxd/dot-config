@@ -1,0 +1,24 @@
+local opt=vim.opt
+opt.relativenumber=true
+opt.number=true
+opt.cursorline=true
+opt.wrap=false
+opt.hlsearch=false
+opt.undofile=true
+opt.showmode=false
+opt.updatetime = 250
+opt.timeout = true
+opt.timeoutlen = 300
+opt.showcmd=false
+opt.tabstop = 2
+opt.shiftwidth = 2
+opt.expandtab = true
+opt.autoindent = true
+opt.ignorecase=true
+opt.smartcase=true
+opt.termguicolors=true
+opt.cursorline=true
+opt.scrolloff=8
+opt.splitright=true
+opt.splitbelow=true
+opt.clipboard:append("unnamedplus")
