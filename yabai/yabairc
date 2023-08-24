@@ -1,0 +1,34 @@
+#!/usr/bin/env sh
+
+#load scripting addition
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+sudo yabai --load-sa
+
+# floating
+yabai -m rule --add app="^Sistem Ayarları$" sticky=on layer=above manage=off
+yabai -m rule --add app="^Simulator$" sticky=on layer=above manage=off
+yabai -m rule --add app="^WhatsApp$" sticky=on layer=above manage=off
+yabai -m rule --add app="^Spotify$" sticky=on layer=above manage=off
+yabai -m rule --add app="^Finder$" sticky=on layer=above manage=off
+yabai -m rule --add app="^Todoist$" sticky=on layer=above manage=off
+yabai -m rule --add app="^Stats$" sticky=on layer=above manage=off
+yabai -m rule --add app="^Hesap Makinesi$" sticky=on layer=above manage=off
+yabai -m rule --add app="^Transporter$" sticky=on layer=above manage=off
+yabai -m rule --add app="^Sistem Bilgileri$" sticky=on layer=above manage=off
+yabai -m rule --add app="^Karabiner-Elements$" sticky=on layer=above manage=off
+yabai -m rule --add app="^Discord$" sticky=on layer=above manage=off
+yabai -m rule --add app="^YouTube Music$" sticky=on layer=above manage=off
+yabai -m rule --add app="^Android Studio$" sticky=on layer=above manage=off
+
+#turn off window shadows
+yabai -m config window_shadow off
+
+#window gap
+yabai -m config layout bsp
+yabai -m config top_padding 5
+yabai -m config bottom_padding 7
+yabai -m config left_padding 7
+yabai -m config right_padding 7
+yabai -m config window_gap 7
+
+echo "yabai configuration loaded.."
