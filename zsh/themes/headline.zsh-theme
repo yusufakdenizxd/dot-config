@@ -365,7 +365,7 @@ headline_precmd() {
 
   # Information
   local user_str host_str path_str branch_str status_str
-  [[ $HEADLINE_DO_USER == 'true' ]] && user_str=Benimaru
+  [[ $HEADLINE_DO_USER == 'true' ]] && user_str="Yusuf Akdeniz"
   [[ $HEADLINE_DO_HOST == 'true' ]] && host_str="Macbook Pro"
   [[ $HEADLINE_DO_PATH == 'true' ]] && path_str=$(print -rP '%~')
   [[ $HEADLINE_DO_GIT_BRANCH == 'true' ]] && branch_str=$(headline_git_branch)
