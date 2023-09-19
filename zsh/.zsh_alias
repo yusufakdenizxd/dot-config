@@ -12,6 +12,8 @@ alias v='ls -1a | fzf-tmux -p --reverse | xargs nvim'
 alias fd='flutter devices'
 alias fr='flutter run'
 alias frr='flutter run --release'
+alias fpg='flutter pub get'
+alias fc='flutter clean'
 
 #LazyGit
 alias lg='lazygit'
@@ -26,7 +28,6 @@ alias dev='cd ~/dev/'
 alias tldrf='tldr --list | fzf --preview "tldr {1} --color=always" --preview-window=right,80% | xargs tldr'
 
 #DESKTOP
-
 alias showDesktop='defaults write com.apple.finder CreateDesktop true; killall Finder';
 alias hideDesktop='defaults write com.apple.finder CreateDesktop false; killall Finder';
 
