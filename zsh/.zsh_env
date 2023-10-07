@@ -1,4 +1,7 @@
-export PATH="$PATH:/Users/ewrossupport/flutter/bin"
+#export PATH="$PATH:/Users/ewrossupport/flutter/bin"
+export PATH="$PATH:/Users/ewrossupport/fvm/default/bin"
+
+
 export PATH="/usr/local/bin:$PATH"
 export PATH="$PATH":"$HOME/.pub-cache/bin"
 export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
