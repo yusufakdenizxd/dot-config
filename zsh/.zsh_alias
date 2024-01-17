@@ -26,7 +26,7 @@ alias rm='trash'
 alias dev='cd ~/dev/'
 
 #TLDR
-alias tldrf='tldr --list | fzf --preview "tldr {1} --color=always" --preview-window=right,80% | xargs tldr'
+alias tldrf='tldr --list | fzf --preview "tldr {1}"  --preview-window=right,80% | xargs tldr'
 
 #DESKTOP
 alias showDesktop='defaults write com.apple.finder CreateDesktop true; killall Finder';
