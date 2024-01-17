@@ -1,15 +1,15 @@
-#export PATH="$PATH:/Users/ewrossupport/flutter/bin"
-export PATH="$PATH:/Users/ewrossupport/fvm/default/bin"
+export PATH="$PATH:/Users/yusufakdeniz/flutter/bin"
+#export PATH="$PATH:/Users/ewrossupport/fvm/default/bin"
 
 
 export PATH="/usr/local/bin:$PATH"
 export PATH="$PATH":"$HOME/.pub-cache/bin"
 export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
-export PATH="/Users/ewrossupport/.local/bin:$PATH"
+export PATH="/Users/yusufakdeniz/.local/bin:$PATH"
 export PATH="/opt/homebrew/opt/php@7.3/bin:$PATH"
-export PATH="/Users/ewrossupport/Library/Android/sdk/tools:$PATH"
-export PATH="/Users/ewrossupport/Library/Android/sdk/platform-tools:$PATH"
-export PATH="/Users/ewrossupport/dev/dot-config/zsh/scripts:$PATH"
+export PATH="/Users/yusufakdeniz/Library/Android/sdk/tools:$PATH"
+export PATH="/Users/yusufakdeniz/Library/Android/sdk/platform-tools:$PATH"
+export PATH="/Users/yusufakdeniz/dev/dot-config/zsh/scripts:$PATH"
 export EDITOR='nvim'
 export VISUAL='nvim'
 
