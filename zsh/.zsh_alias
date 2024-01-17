@@ -9,12 +9,12 @@ alias vim='nvim'
 alias v='ls -1a | fzf-tmux -p --reverse | xargs nvim'
 
 #FLUTTER
-alias f='fvm flutter'
-alias fd='fvm flutter devices'
-alias fr='fvm flutter run'
-alias frr='fvm flutter run --release'
-alias fpg='fvm flutter pub get'
-alias fc='fvm flutter clean'
+alias f='flutter'
+alias fd='flutter devices'
+alias fr='flutter run'
+alias frr='flutter run --release'
+alias fpg='flutter pub get'
+alias fc='flutter clean'
 
 #LazyGit
 alias lg='lazygit'
