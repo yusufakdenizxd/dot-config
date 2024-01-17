@@ -1,8 +1,15 @@
---[[
-  File: telescope.lua
-  Description: Telescope plugin configuration
-  See: https://github.com/nvim-telescope/telescope.nvim
-]]
 local telescope = require("telescope")
-telescope.setup()
+telescope.setup({
+  defaults = {
+    -- Default configuration for telescope goes here:
+    -- config_key = value,
+    mappings = {
+      i = {
+        -- map actions.which_key to <C-h> (default: <C-/>)
+        -- actions.which_key shows the mappings for your picker,
+        -- e.g. git_{create, delete, ...}_branch for the git_branches picker
+        ["<C-j>"] = "which_key"
+      }
+    }
+  },})
 

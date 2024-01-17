@@ -1,10 +1,3 @@
-
---[[
-  File: cmp.lua
-  Description: CMP plugin configuration (with lspconfig)
-  See: https://github.com/hrsh7th/nvim-cmp
-]]
-
 local cmp = require('cmp')
 local lspkind = require('lspkind')
 
@@ -16,12 +9,9 @@ cmp.setup{
   },
 
   mapping = {
-
-
     ['<C-a>'] = cmp.mapping.complete(),
     ['<CR>'] = cmp.config.disable,                      -- Turn off autocomplete on <CR>
-    ['<cr>'] = cmp.mapping.confirm({ select = true }), -- Turn on autocomplete on <C-y>
-
+    ['<C-y>'] = cmp.mapping.confirm({ select = true }), -- Turn on autocomplete on <C-y>
 
     ['<C-e>'] = cmp.mapping({
       i = cmp.mapping.abort(), -- Abort completion

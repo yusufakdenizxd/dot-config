@@ -1,4 +1,4 @@
---[[
+--[[pluginplug
   File: plugins.lua
   Description: This file needed for loading plugin list into lazy.nvim and loading plugins
   Info: Use <zo> and <zc> to open and close foldings
@@ -19,6 +19,37 @@ return {
       require "extensions.mason"
     end
   },
+  {
+    'VonHeikemen/fine-cmdline.nvim',
+    dependencies = {
+      {'MunifTanjim/nui.nvim'}
+    },
+    config = function()
+      require "extensions.cmdline"
+    end
+  },
+  {
+      'akinsho/flutter-tools.nvim',
+      lazy = false,
+      dependencies = {
+          'nvim-lua/plenary.nvim',
+          'stevearc/dressing.nvim', -- optional for vim.ui.select
+      },
+      config = function()
+        require "extensions.flutter"
+      end
+  },
+
+  {'romgrk/barbar.nvim',
+    dependencies = {
+      'lewis6991/gitsigns.nvim', -- OPTIONAL: for git status
+      'nvim-tree/nvim-web-devicons', -- OPTIONAL: for file icons
+    },
+      config = function()
+        require "extensions.barbar"
+      end,
+    version = '^1.0.0', -- optional: only update when a new 1.x version is released
+  },
 
   {
     "nvim-neo-tree/neo-tree.nvim",
@@ -33,7 +64,7 @@ return {
   },
 
   {
-    "nvim-lualine/lualine.nvim",
+ 'nvim-lualine/lualine.nvim',
     config = function ()
       require "extensions.lualine"
     end
