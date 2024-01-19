@@ -14,7 +14,7 @@ alias f='flutter'
 alias fd='flutter devices'
 alias fr='flutter run'
 alias frr='flutter run --release'
-alias fpg='flutter pub get'
+alias fpg='flutter pub get --no-example'
 alias fc='flutter clean'
 
 #LazyGit
