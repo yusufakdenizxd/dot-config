@@ -115,7 +115,7 @@ precmd() {
   if [[ $VCS != "" ]]; then
     vcs_info
   fi
-  printPsOneLimiter
+  # printPsOneLimiter
 }
 
 # ENV/VARIABLES/LS_COLORS ======================================================
