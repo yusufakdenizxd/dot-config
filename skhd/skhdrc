@@ -3,8 +3,7 @@ rcmd  - v: open -a 'Visual Studio Code'
 rcmd  - a: open -a 'Arc'
 rcmd  - m: open -a 'WhatsApp'
 rcmd  - c: open -a 'Calendar'
-rcmd  - n: open -a 'Notes'
-rcmd  - t: open -a 'Reminders'
+rcmd  - o: open -a 'Obsidian'
 
 
 0x53: open -a 'Visual Studio Code'
