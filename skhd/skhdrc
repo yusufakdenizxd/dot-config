@@ -6,9 +6,4 @@ rcmd  - c: open -a 'Calendar'
 rcmd  - o: open -a 'Obsidian'
 
 
-0x53: open -a 'Visual Studio Code'
-0x54: open -a 'Arc'
-0x55: open -a 'WhatsApp'
-0x56: open -a 'Reminders'
-0x57: open -a 'kitty'
-0x58: open -a 'Notes'
+
