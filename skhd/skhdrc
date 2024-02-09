@@ -1,4 +1,4 @@
-rcmd  - w: open -a 'kitty'
+rcmd  - t: open -a 'kitty'
 rcmd  - v: open -a 'Visual Studio Code'
 rcmd  - a: open -a 'Arc'
 rcmd  - m: open -a 'WhatsApp'
