@@ -1,0 +1,1 @@
+("~/dev/dot-config/" "~/dev/extensions/flutter-utilities/" "~/dev/touchbar_extension/" "~/dev/shoretest/" "~/dev/recapp/" "~/dev/insaattemp/" "~/dev/insaat-project/" "~/dev/dental/")
