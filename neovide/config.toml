@@ -1,0 +1,9 @@
+wsl = false
+no-multigrid = false
+vsync = true
+maximized = false
+srgb = false
+idle = true
+frame = "none"
+title-hidden = false
+tabs = true

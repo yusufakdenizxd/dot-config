@@ -22,6 +22,7 @@ return {
 				'rust_analyzer',
 				'lua_ls',
 				'csharp_ls',
+				'clangd',
 				'cssls',
 				'html',
 				'jsonls',
@@ -47,7 +48,8 @@ return {
 					vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
 					vim.keymap.set('n', '<leader>D', vim.lsp.buf.type_definition, opts)
 					vim.keymap.set('n', 'Q', vim.lsp.buf.rename, opts)
-					vim.keymap.set({ 'n', 'v' }, '<leader>ca', vim.lsp.buf.code_action, opts)
+					vim.keymap.set('n', 'gr', vim.lsp.buf.references, optk)
+					vim.keymap.set({ 'n', 'v' }, '<M-q>', vim.lsp.buf.code_action, opts)
 				end,
 			})
 		end,

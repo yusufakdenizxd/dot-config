@@ -1,6 +1,4 @@
 export PATH="$PATH:/Users/yusufakdeniz/flutter/bin"
-#export PATH="$PATH:/Users/ewrossupport/fvm/default/bin"
-
 
 export PATH="/usr/local/bin:$PATH"
 export PATH="$PATH":"$HOME/.pub-cache/bin"

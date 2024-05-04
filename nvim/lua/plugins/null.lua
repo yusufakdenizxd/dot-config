@@ -60,7 +60,7 @@ return {
           require('null-ls').builtins.formatting.csharpier,
         },
       })
-      vim.keymap.set('n', '§', vim.lsp.buf.format)
+      vim.keymap.set('n', ',,', vim.lsp.buf.format)
     end,
   },
   {

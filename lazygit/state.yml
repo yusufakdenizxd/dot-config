@@ -1,15 +1,27 @@
 lastupdatecheck: 0
 recentrepos:
-- /Users/ewrossupport/dev/dot-config
-- /Users/ewrossupport/dev/fuargps
-- /Users/ewrossupport/dev/mobiliyum
-- /Users/ewrossupport/dev/keys
-- /Users/ewrossupport/dev/taba_v2
-- /Users/ewrossupport/dev/Niens2
-- /Users/ewrossupport/Pictures/Wallpaper
+- /Users/yusufakdeniz/dev/dot-config
+- /Users/yusufakdeniz/dev/extensions/flutter-utilities
+- /Users/yusufakdeniz/dev/recapp
+- /Users/yusufakdeniz/Pictures/wallpaper
+- /Users/yusufakdeniz/work/wobilimoda_super_admin
+- /Users/yusufakdeniz/work/wobilimoda_codebase
+- /Users/yusufakdeniz/work/wobilimoda
+- /Users/yusufakdeniz/work/tabav2
+- /Users/yusufakdeniz/work/kuryem/kurye
+- /Users/yusufakdeniz/work/wobilimoda_admin
+- /Users/yusufakdeniz/work/kuryem/kurye_surucu
 startuppopupversion: 5
+lastversion: 0.41.0
 customcommandshistory:
-- q
+- vim .
 - h
+- q
+- asd
 hidecommandlog: false
 ignorewhitespaceindiffview: true
+diffcontextsize: 3
+localbranchsortorder: recency
+remotebranchsortorder: alphabetical
+gitlogorder: topo-order
+gitlogshowgraph: when-maximised
