@@ -1,26 +1,14 @@
-#!/bin/bash
+#!/bin/sh
 
-update() {
-  WIDTH="dynamic"
-  if [ "$SELECTED" = "true" ]; then
-    WIDTH="0"
-  fi
+OFFSETS=(28 56 84 112 139)
 
-  sketchybar --animate tanh 20 --set $NAME icon.highlight=$SELECTED label.width=$WIDTH
-}
+if [ "$SELECTED" = "true" ]; then
+    SPACE_NUMBER=$(expr ${NAME:6:1} - 1)
+    sketchybar --animate sin 13 --set "$NAME" icon.color=0xff282828
+else
+    sketchybar --animate sin 13 --set "$NAME" icon.color=0xff928374
+fi
 
-mouse_clicked() {
-  if [ "$BUTTON" = "right" ]; then
-    yabai -m space --destroy $SID
-    sketchybar --trigger space_change --trigger windows_on_spaces
-  else
-    yabai -m space --focus $SID 2>/dev/null
-  fi
-}
+OFFSET=${OFFSETS[$SPACE_NUMBER]}
 
-case "$SENDER" in
-  "mouse.clicked") mouse_clicked
-  ;;
-  *) update
-  ;;
-esac
+sketchybar --animate sin 13 --set space_indicator padding_left=$OFFSET
