@@ -1,4 +1,5 @@
 alias c='clear'
+alias cd='z'
 #alias ll='ls -lf'
 alias code="open -a 'Visual Studio Code'"
 alias s='source ~/.zshrc;echo "\n $fg[green]ZSH Sourced$reset_color \n"'
@@ -7,9 +8,9 @@ alias cf='nvim ~/dev/dot-config/'
 alias ld="eza -lD"
 alias lf="eza -lF --color=always | grep -v /"
 alias lh="eza -dl .* --group-directories-first"
-alias ll="eza -al --group-directories-first"
-alias ls="eza  --color=always --sort=size | grep -v /"
-alias lt="eza -al --sort=modified"
+alias ll="eza -al --group-directories-first --icons"
+alias ls="eza  --color=always --sort=size --icons -l"
+alias lt="eza -al --sort=modified --icons"
 
 #VIM
 alias vi='nvim'
