@@ -1,4 +1,0 @@
-/Users/yusufakdeniz/.config/emacs/elpa/vterm-20240325.1551/build/CMakeFiles/vterm-module.dir
-/Users/yusufakdeniz/.config/emacs/elpa/vterm-20240325.1551/build/CMakeFiles/run.dir
-/Users/yusufakdeniz/.config/emacs/elpa/vterm-20240325.1551/build/CMakeFiles/edit_cache.dir
-/Users/yusufakdeniz/.config/emacs/elpa/vterm-20240325.1551/build/CMakeFiles/rebuild_cache.dir
