@@ -1,9 +1,8 @@
 alias c='clear'
 alias cd='z'
 #alias ll='ls -lf'
-alias code="open -a 'Visual Studio Code'"
+alias code="code-insiders"
 alias s='source ~/.zshrc;echo "\n $fg[green]ZSH Sourced$reset_color \n"'
-alias cf='nvim ~/dev/dot-config/'
 
 alias ld="eza -lD"
 alias lf="eza -lF --color=always | grep -v /"
@@ -17,17 +16,10 @@ alias vi='nvim'
 alias vim='nvim'
 alias v='ls -1a | fzf-tmux -p --reverse | xargs nvim'
 
-#FLUTTER
-alias f='flutter'
-alias fd='flutter devices'
-alias fr='flutter run'
-alias frr='flutter run --release'
-alias fpg='flutter pub get --no-example'
-alias fc='flutter clean'
 
-alias rmBuild='cd ~/dev | find . -mindepth 1 -maxdepth 3 -type d -name build -exec rm -rf {} \;'
-alias rmPods='cd ~/dev | find . -mindepth 1 -maxdepth 3 -type d -name Pods -exec rm -rf {} \;'
-alias rmDartTool='cd ~/dev | find . -mindepth 1 -maxdepth 3 -type d -name .dart_tool -exec rm -rf {} \;'
+alias rmBuild='find . -mindepth 1 -maxdepth 3 -type d -name build -exec rm -rf {} \;'
+alias rmPods='find . -mindepth 1 -maxdepth 3 -type d -name Pods -exec rm -rf {} \;'
+alias rmDartTool='find . -mindepth 1 -maxdepth 3 -type d -name .dart_tool -exec rm -rf {} \;'
 
 #LazyGit
 alias lg='lazygit'
@@ -47,9 +39,7 @@ alias hideDesktop='defaults write com.apple.finder CreateDesktop false; killall 
 
 alias backupGTNH="cd '/Users/yusufakdeniz/Library/Application Support/PrismLauncher/instances/GT_New_Horizons_2.5.1_Java_17-21/.minecraft/saves/The World' && git add --all && git commit * --allow-empty-message -m ''"
 
-#TMUX
-alias ta='tmux attach -t'
-alias tn='tmux new-session -s'
-alias tk='tmux kill-session -t'
-alias tl='tmux list-sessions'
-alias td='tmux detach'
+alias pokemons='pokemon-colorscripts -l | fzf | xargs pokemon-colorscripts --no-title -n'
+
+alias tmuxsm="~/dev/dot-config/zsh/script/tmux-resurrect-fzf.sh"
+alias cflutter="~/dev/dot-config/zsh/script/flutter_commands.sh"

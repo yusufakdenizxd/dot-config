@@ -1,0 +1,14 @@
+name: glow-config
+root: ~/dev/dot-config/glow
+
+windows:
+  - vim:
+      layout: main-vertical
+      panes:
+        - glow config
+  - theme:
+      panes:
+        - nvim .
+  - livedemo:
+      panes:
+        - glow

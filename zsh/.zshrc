@@ -14,8 +14,9 @@ source $ZSH/oh-my-zsh.sh
 
 source ~/dev/dot-config/zsh/.zsh_env
 source ~/dev/dot-config/zsh/.zsh_alias
+
 eval $(/opt/homebrew/bin/brew shellenv)
-# eval "$(starship init zsh)"
+#eval "$(starship init zsh)"
 #
 eval "$(zoxide init zsh)"
 
@@ -35,3 +36,27 @@ PATH=~/.console-ninja/.bin:$PATH
 ## [/Completion]
 
 export PATH="/Users/yusufakdeniz/.shorebird/bin:$PATH"
+
+
+# Herd injected PHP 8.3 configuration.
+export HERD_PHP_83_INI_SCAN_DIR="/Users/yusufakdeniz/Library/Application Support/Herd/config/php/83/"
+
+
+# Herd injected PHP binary.
+export PATH="/Users/yusufakdeniz/Library/Application Support/Herd/bin/":$PATH
+
+
+# Herd injected NVM configuration
+export NVM_DIR="/Users/yusufakdeniz/Library/Application Support/Herd/config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+[[ -f "/Applications/Herd.app/Contents/Resources/config/shell/zshrc.zsh" ]] && builtin source "/Applications/Herd.app/Contents/Resources/config/shell/zshrc.zsh"
+
+
+# Herd injected PHP 8.1 configuration.
+export HERD_PHP_81_INI_SCAN_DIR="/Users/yusufakdeniz/Library/Application Support/Herd/config/php/81/"
+
+pokemon-colorscripts -r 1-3 --no-title
+
+# pokemon-colorscripts -n suicune --no-title
+# pokemon-colorscripts -n charizard --no-title

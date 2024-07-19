@@ -1,0 +1,8 @@
+name: zsh-config
+root: ~/dev/dot-config/zsh
+
+windows:
+  - vim:
+      layout: main-vertical
+      panes:
+        - nvim .

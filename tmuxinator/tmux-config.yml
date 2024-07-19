@@ -1,0 +1,8 @@
+name: tmux-config
+root: ~/dev/dot-config/tmux
+
+windows:
+  - vim:
+      layout: main-vertical
+      panes:
+        - nvim tmux.conf

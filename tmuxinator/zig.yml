@@ -1,0 +1,9 @@
+name: zig
+root: ~/dev/zig
+
+windows:
+  - vim:
+      layout: main-vertical
+      panes:
+        - vim
+  - run:

@@ -1,8 +1,8 @@
 #!/usr/bin/env sh
 
 #load scripting addition
-sudo yabai --load-sa
 yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+sudo yabai --load-sa
 
 
 # Global Settings
@@ -12,6 +12,7 @@ yabai -m config window_placement             second_child
 #yabai -m config window_topmost               off
 yabai -m config window_topmost off
 
+yabai -m config window_border                off
 yabai -m config window_shadow                off
 yabai -m config window_opacity               off
 yabai -m config window_opacity_duration      0.0
@@ -29,60 +30,13 @@ yabai -m config mouse_drop_action            swap
 yabai -m config window_animation_duration    0.1
 
 yabai -m config layout                       bsp
-yabai -m config top_padding                  12
-yabai -m config bottom_padding               45
-yabai -m config left_padding                 12
-yabai -m config right_padding                12
+yabai -m config top_padding                  4
+yabai -m config bottom_padding               4
+# yabai -m config bottom_padding               30
+yabai -m config left_padding                 4
+yabai -m config right_padding                4
 yabai -m config window_gap                   12
-#
-# setup spaces
-#
-for _ in $(yabai -m query --spaces | jq '.[].index | select(. > 6)'); do
-  yabai -m space --destroy 7
-done
 
-function setup_space {
-  local idx="$1"
-  local name="$2"
-  local space=
-  echo "setup space $idx : $name"
+yabai -m rule --add label=emacs app=Emacs manage=on
 
-  space=$(yabai -m query --spaces --space "$idx")
-  if [ -z "$space" ]; then
-    yabai -m space --create
-  fi
-
-  yabai -m space "$idx" --label "$name"
-}
-
-setup_space 1 code
-setup_space 2 terminal
-setup_space 3 web
-setup_space 4 social
-setup_space 5 other
-
-yabai -m config --space 1 layout             bsp
-yabai -m config --space 2 layout             bsp
-yabai -m config --space 3 layout             bsp
-yabai -m config --space 4 layout             bsp
-yabai -m config --space 5 layout             bsp
-
-yabai -m rule --add app="^Neovide$" space=1
-yabai -m rule --add app="^VSCodium$" space=1
-
-yabai -m rule --add app="^kitty$" space=2
-yabai -m rule --add app="^Terminal$" space=2
-yabai -m rule --add app="^Xcode$" space=2
-
-yabai -m rule --add app="^Arc$" space=3
-
-yabai -m rule --add app="^Messages$" space=4
-yabai -m rule --add app="zoom" manage=off layer=normal space=4
-yabai -m rule --add app="^FaceTime$" space=4
-yabai -m rule --add app="^WhatsApp Desktop$" space=4
-
-yabai -m rule --add app="^Obsidian$" space=5
-
-
-# video
 echo "yabai configuration loaded.."

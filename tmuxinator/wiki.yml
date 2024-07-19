@@ -1,0 +1,15 @@
+# /Users/yusufakdeniz/.config/tmuxinator/wiki.yml
+
+name: wiki
+root: ~/wiki/
+
+windows:
+  - personal:
+      layout: main-vertical
+      panes:
+        - vim personal/index.md
+
+  - work:
+      layout: main-vertical
+      panes:
+        - vim work/index.md

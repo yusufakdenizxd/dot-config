@@ -1,23 +1,30 @@
 lastupdatecheck: 0
 recentrepos:
-- /Users/yusufakdeniz/dev/dot-config
-- /Users/yusufakdeniz/dev/extensions/flutter-utilities
-- /Users/yusufakdeniz/dev/recapp
-- /Users/yusufakdeniz/Pictures/wallpaper
-- /Users/yusufakdeniz/work/wobilimoda_super_admin
-- /Users/yusufakdeniz/work/wobilimoda_codebase
-- /Users/yusufakdeniz/work/wobilimoda
-- /Users/yusufakdeniz/work/tabav2
-- /Users/yusufakdeniz/work/kuryem/kurye
-- /Users/yusufakdeniz/work/wobilimoda_admin
-- /Users/yusufakdeniz/work/kuryem/kurye_surucu
+    - /Users/yusufakdeniz/dev/dot-config
+    - /Users/yusufakdeniz/work/tabav2
+    - /Users/yusufakdeniz/dev/tmux-gruvboxdark
+    - /Users/yusufakdeniz/work/isdetay
+    - /Users/yusufakdeniz/wiki
+    - /Users/yusufakdeniz/work/filament_resources
+    - /Users/yusufakdeniz/work/Ecommerce-admin
+    - /Users/yusufakdeniz/dev/oil-vscode
+    - /Users/yusufakdeniz/dev/nowplaying-cli
+    - /Users/yusufakdeniz/dev/task-list
+    - /Users/yusufakdeniz/work/proforma
+    - /Users/yusufakdeniz/work/ewros_atlas
+    - /Users/yusufakdeniz/work/kurye_surucu
+    - /Users/yusufakdeniz/work/kurye
+    - /Users/yusufakdeniz/work/wobilimoda_codebase
+    - /Users/yusufakdeniz/work/kuryem_admin
+    - /Users/yusufakdeniz/work/kurye_codebase
+    - /Users/yusufakdeniz/Pictures/wallpaper
 startuppopupversion: 5
-lastversion: 0.41.0
+lastversion: 0.42.0
 customcommandshistory:
-- vim .
-- h
-- q
-- asd
+    - vim .
+    - h
+    - q
+    - asd
 hidecommandlog: false
 ignorewhitespaceindiffview: true
 diffcontextsize: 3

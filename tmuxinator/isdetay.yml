@@ -1,0 +1,10 @@
+name: isdetay
+root: ~/work/isdetay
+
+windows:
+  - vim:
+      layout: main-vertical
+      panes:
+        - vim .
+  - run:
+      layout: main-vertical

@@ -1,0 +1,11 @@
+name: tabav2
+root: ~/work/tabav2
+
+windows:
+  - vim:
+      layout: main-vertical
+      panes:
+        - vim .
+
+  - run:
+      layout: main-vertical

@@ -3,11 +3,32 @@ export PATH="$PATH:/Users/yusufakdeniz/flutter/bin"
 export PATH="/usr/local/bin:$PATH"
 export PATH="$PATH":"$HOME/.pub-cache/bin"
 export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
+export PATH="/usr/bin/python3:$PATH"
 export PATH="/Users/yusufakdeniz/.local/bin:$PATH"
 export PATH="/opt/homebrew/opt/php@7.3/bin:$PATH"
 export PATH="/Users/yusufakdeniz/Library/Android/sdk/tools:$PATH"
 export PATH="/Users/yusufakdeniz/Library/Android/sdk/platform-tools:$PATH"
 export PATH="/Users/yusufakdeniz/dev/dot-config/zsh/scripts:$PATH"
+export PATH="/Users/yusufakdeniz/.composer:$PATH"
+export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
+export PATH="/Users/yusufakdeniz/.config/emacs/bin:$PATH"
+export PATH="/Users/yusufakdeniz/.composer/vendor/bin:$PATH"
+
+export CPATH=/opt/homebrew/include
+export LIBRARY_PATH=/opt/homebrew/lib
+
+VULKAN_SDK="/Users/yusufakdeniz/VulkanSDK/1.3.283.0/macOS"
+export VULKAN_SDK
+export PATH="$VULKAN_SDK/bin:$PATH:"
+DYLD_LIBRARY_PATH="$VULKAN_SDK/lib:${DYLD_LIBRARY_PATH:-}"
+export DYLD_LIBRARY_PATH
+VK_ADD_LAYER_PATH="$VULKAN_SDK/share/vulkan/explicit_layer.d"
+export VK_ADD_LAYER_PATH
+VK_ICD_FILENAMES="$VULKAN_SDK/share/vulkan/icd.d/MoltenVK_icd.json"
+export VK_ICD_FILENAMES
+VK_DRIVER_FILES="$VULKAN_SDK/share/vulkan/icd.d/MoltenVK_icd.json"
+export VK_DRIVER_FILES
+
 export EDITOR='nvim'
 export VISUAL='nvim'
 

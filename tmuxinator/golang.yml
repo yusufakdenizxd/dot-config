@@ -1,0 +1,8 @@
+name: learngolang
+root: ~/dev/learngo/
+windows:
+  - vim:
+      layout: main-vertical
+      panes:
+        - vim
+        - zsh
