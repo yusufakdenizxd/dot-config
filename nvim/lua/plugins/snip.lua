@@ -94,6 +94,7 @@ local snippets = function()
 	ls.add_snippets("markdown", markdown_snippets)
 
 	local dart_snippets = {}
+
 	ls.add_snippets("dart", dart_snippets)
 end
 
@@ -112,6 +113,8 @@ return {
 			vim.keymap.set({ "i", "s" }, "<a-h>", function()
 				require("luasnip").jump(-1)
 			end, { silent = true })
+
+			require("luasnip.loaders.from_vscode").load({ paths = "~/.config/nvim/snippets/" })
 		end,
 	},
 	{
