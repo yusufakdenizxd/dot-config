@@ -1,4 +1,5 @@
 import = ["~/.config/alacritty/themes/themes/gruvbox_dark.toml"]
+# import = ["~/.config/alacritty/themes/themes/nordic.toml"]
 
 [env]
 TERM = "xterm-256color"
@@ -36,17 +37,6 @@ style = "Beam"
 
 [mouse]
 hide_when_typing = true
-
-
-[[keyboard.bindings]]
-chars = ",*,x"
-key = "x"
-mods = "Command"
-
-[[keyboard.bindings]]
-chars = ",*,s"
-key = "s"
-mods = "Command"
 
 [[keyboard.bindings]]
 action = "DecreaseFontSize"
