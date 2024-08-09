@@ -43,3 +43,5 @@ alias pokemons='pokemon-colorscripts -l | fzf | xargs pokemon-colorscripts --no-
 
 alias tmuxsm="~/dev/dot-config/zsh/script/tmux-resurrect-fzf.sh"
 alias cflutter="~/dev/dot-config/zsh/script/flutter_commands.sh"
+
+alias cat="bat --color=always --style=numbers,changes --theme=gruvbox-dark"
