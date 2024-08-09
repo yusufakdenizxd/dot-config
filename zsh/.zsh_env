@@ -3,6 +3,8 @@ export PATH="$PATH:/Users/yusufakdeniz/flutter/bin"
 export PATH="/usr/local/bin:$PATH"
 export PATH="$PATH":"$HOME/.pub-cache/bin"
 export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
+export PATH="/Users/yusufakdeniz/go/bin:$PATH"
+
 export PATH="/usr/bin/python3:$PATH"
 export PATH="/Users/yusufakdeniz/.local/bin:$PATH"
 export PATH="/opt/homebrew/opt/php@7.3/bin:$PATH"
