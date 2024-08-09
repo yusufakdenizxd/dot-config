@@ -34,6 +34,6 @@ hyper - f : open -a Vivaldi
 
 
 rcmd - f         : yabai -m window --toggle zoom-fullscreen
-shift + alt - f : yabai -m window --toggle native-fullscreen
+shift + ralt - f : yabai -m window --toggle native-fullscreen
 
 
