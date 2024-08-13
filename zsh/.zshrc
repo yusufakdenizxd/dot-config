@@ -60,3 +60,4 @@ pokemon-colorscripts -r 1-3 --no-title
 
 # pokemon-colorscripts -n suicune --no-title
 # pokemon-colorscripts -n charizard --no-title
+echo -ne '\e[5 q'
