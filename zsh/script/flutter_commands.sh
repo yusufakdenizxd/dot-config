@@ -1,14 +1,26 @@
 #!/usr/bin/env bash
 
-fcommands=`echo "doctor,pub get,clean,run --flavor dev -t lib/main_dev.dart,run --flavor prod -t lib/main_prod.dart" | tr ',' '\n'`
-SELECTED_PROJECTS=$(printf "$fcommands" |
-    fzf --tmux center,20%,30% --prompt="Commands: " -m -1 -q "$1")
+declare -A commands
 
-if [ -n "$SELECTED_PROJECTS" ]; then
-    IFS=$'\n'
+# Mapping labels to commands
+commands["Build Release Apk"]="build apk --release"
+commands["Test"]="test"
+commands["Doctor"]="doctor"
+commands["Pub Get"]="pub get --no-example"
+commands["Clean"]="clean"
+commands["List Devices"]="devices"
+commands["Run Without Flavor"]="run"
+commands["Run Dev Flavor"]="run --flavor dev -t lib/main_dev.dart"
+commands["Run Prod Flavor"]="run --flavor prod -t lib/main_prod.dart"
+commands["Build Appbundle Prod Flavor"]="build appbundle --flavor prod -t lib/main_prod.dart"
+commands["Build Ipa Prod Flavor"]="build ipa --flavor prod -t lib/main_prod.dart"
 
-    for PROJECT in $SELECTED_PROJECTS; do
-      flutter $PROJECT
-    done
+# Show labels in fzf
+selected_label=$(printf "%s\n" "${!commands[@]}" | fzf --tmux center,20%,30% --layout reverse --prompt="Commands: " -m -1 -q "$1")
 
+# Execute the corresponding command
+if [ -n "$selected_label" ]; then
+    flutter ${commands["$selected_label"]}
+else
+    echo "Command not selected bro"
 fi
