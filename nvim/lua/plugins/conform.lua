@@ -19,7 +19,7 @@ return {
 				markdown = { "prettier" },
 				graphql = { "prettier" },
 				lua = { "stylua" },
-				python = { "isort", "black" },
+				python = { "black" },
 				php = { "php-cs-fixer" },
 			},
 			formatters = {
@@ -27,7 +27,7 @@ return {
 					command = "php-cs-fixer",
 					args = {
 						"fix",
-						"--rules=@PSR12", -- Formatting preset. Other presets are available, see the php-cs-fixer docs.
+						"--rules=@PSR12",
 						"$FILENAME",
 					},
 					stdin = false,

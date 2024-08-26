@@ -1,0 +1,11 @@
+# /Users/yusufakdeniz/.config/tmuxinator/lumina.yml
+
+name: lumina
+root: ~/dev/lumina
+
+windows:
+  - vim:
+      layout: main-vertical
+      panes:
+        - nvim .
+  - server: yarn run dev

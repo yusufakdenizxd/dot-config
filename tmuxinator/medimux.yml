@@ -1,0 +1,17 @@
+# /Users/yusufakdeniz/.config/tmuxinator/medimux.yml
+
+name: medimux
+root: ~/dev/medimux
+
+windows:
+  - zsh:
+      layout: main-vertical
+  - server:
+      pre: cd medimux-server
+      panes:
+        - vim .
+
+  - client:
+      pre: cd medimux-client
+      panes:
+        - vim .

@@ -1,0 +1,8 @@
+name: kitty-config
+root: ~/dev/dot-config/kitty
+
+windows:
+  - vim:
+      layout: main-vertical
+      panes:
+        - nvim kitty.conf

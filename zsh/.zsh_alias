@@ -1,5 +1,4 @@
 alias c='clear'
-alias cd='z'
 #alias ll='ls -lf'
 alias code="code-insiders"
 alias s='source ~/.zshrc;echo "\n $fg[green]ZSH Sourced$reset_color \n"'

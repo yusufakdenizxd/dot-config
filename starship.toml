@@ -1,0 +1,105 @@
+[line_break]
+disabled = true
+
+[character]
+success_symbol = "[\uf054](white)" # 
+vicmd_symbol = "[\ue62b](white)" # 
+error_symbol = "[\uf467](red)" # 
+
+[directory]
+style = "blue bold"
+
+[package]
+disabled = true
+
+[username]
+disabled = true
+
+[hostname]
+disabled = true
+
+[aws]
+disabled = true
+
+[docker_context]
+disabled = true
+
+[git_commit]
+disabled = true
+
+[git_state]
+disabled = true
+
+[git_metrics]
+disabled = true
+
+[git_status]
+disabled = true
+
+[dart]
+symbol = " "
+format = "[$symbol]($style)"
+
+[golang]
+symbol = " "
+format = "[$symbol]($style)"
+
+[haskell]
+symbol = " "
+format = "[$symbol]($style)"
+
+[git_branch]
+symbol = " "
+format = "[$symbol]($style)[$branch(:$remote_branch)]($style) "
+
+[java]
+symbol = " "
+format = "[$symbol]($style)"
+
+[julia]
+symbol = " "
+format = "[$symbol]($style)"
+
+[memory_usage]
+symbol = " "
+format = "[$symbol]($style)"
+
+[nim]
+symbol = " "
+format = "[$symbol]($style)"
+
+[nix_shell]
+symbol = " "
+format = "[$symbol]($style)"
+
+[nodejs]
+symbol = " "
+format = "[$symbol]($style)"
+
+[perl]
+symbol = " "
+format = "[$symbol]($style)"
+
+[zig]
+format = "[$symbol]($style)"
+
+[php]
+symbol = " "
+format = "[$symbol]($style)"
+
+[python]
+symbol = " "
+style = "bold green"
+format = "[$symbol]($style)"
+
+[ruby]
+symbol = " "
+format = "[$symbol]($style)"
+
+[rust]
+symbol = " "
+format = "[$symbol]($style)"
+
+[swift]
+symbol = "ﯣ "
+format = "[$symbol]($style)"

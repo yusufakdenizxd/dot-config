@@ -9,6 +9,7 @@ return {
 		fzf.setup({
 			{
 				"default-title",
+
 				actions = {
 					["alt-q"] = actions.quickfix,
 					["alt-a"] = actions.file_sel_to_qf,
@@ -23,14 +24,6 @@ return {
 			},
 		})
 
-		vim.keymap.set("n", ",*,x", function()
-			fzf.commands()
-		end, { desc = "Open Commands Like IVY Mode" })
-
-		vim.keymap.set("n", "<D-x>", function()
-			fzf.commands()
-		end, { desc = "Open Commands Like IVY Mode" })
-
 		vim.keymap.set("n", "gr", function()
 			fzf.lsp_references()
 		end, { desc = "Find All Lsp References" })
@@ -40,11 +33,11 @@ return {
 		end, { desc = "Find All Errors (Fzf)" })
 
 		vim.keymap.set("n", "<M-t>", function()
-			fzf.live_grep_native({ search = "TODO|HACK|PERF|NOTE|FIX", no_esc = true })
+			fzf.live_grep_native({ search = [[\b(?:TODO|HACK|PERF|NOTE|FIX)\b]], no_esc = true })
 		end, { desc = "Find All TODOS (Fzf)" })
-
 		vim.keymap.set("n", "<Tab>", "<cmd>FzfLua buffers<cr>", { desc = "Buffers Fzf" })
 		vim.keymap.set("n", "<S-Tab>", "<cmd>FzfLua files<cr>", { desc = "Files Fzf" })
+		vim.keymap.set("n", "<C-Tab>", "<cmd>FzfLua files<cr>", { desc = "Files Fzf" })
 		vim.keymap.set("n", "<M-f>", "<cmd>FzfLua live_grep_native<cr>", { desc = "Live Grep Fzf" })
 	end,
 }

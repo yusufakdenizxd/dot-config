@@ -1,0 +1,7 @@
+# /Users/yusufakdeniz/.config/tmuxinator/github.yml
+
+name: github
+root: ~/github/
+
+windows:
+  - vim:

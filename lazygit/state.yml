@@ -1,10 +1,22 @@
 lastupdatecheck: 0
 recentrepos:
     - /Users/yusufakdeniz/dev/dot-config
+    - /Users/yusufakdeniz/github/pr/flutterfire
+    - /Users/yusufakdeniz/dev/compiler-in-go
+    - /Users/yusufakdeniz/dev/ziglings.org
     - /Users/yusufakdeniz/work/tabav2
-    - /Users/yusufakdeniz/dev/tmux-gruvboxdark
+    - /Users/yusufakdeniz/work/wobilimoda_codebase
+    - /Users/yusufakdeniz/work/wobilimoda
     - /Users/yusufakdeniz/work/isdetay
-    - /Users/yusufakdeniz/wiki
+    - /Users/yusufakdeniz/dev/Script-Master
+    - /Users/yusufakdeniz/dev/tmux-betterchoosetree
+    - /Users/yusufakdeniz/dev/medimux
+    - /Users/yusufakdeniz/dev/lumina
+    - /Users/yusufakdeniz/work/story
+    - /Users/yusufakdeniz/dev/medimux/medimux-server
+    - /Users/yusufakdeniz/dev/nuzlocke-bot
+    - /Users/yusufakdeniz/dev/ders-calan-3000
+    - /Users/yusufakdeniz/dev/tmux-gruvboxdark
     - /Users/yusufakdeniz/work/filament_resources
     - /Users/yusufakdeniz/work/Ecommerce-admin
     - /Users/yusufakdeniz/dev/oil-vscode
@@ -14,12 +26,11 @@ recentrepos:
     - /Users/yusufakdeniz/work/ewros_atlas
     - /Users/yusufakdeniz/work/kurye_surucu
     - /Users/yusufakdeniz/work/kurye
-    - /Users/yusufakdeniz/work/wobilimoda_codebase
     - /Users/yusufakdeniz/work/kuryem_admin
     - /Users/yusufakdeniz/work/kurye_codebase
     - /Users/yusufakdeniz/Pictures/wallpaper
 startuppopupversion: 5
-lastversion: 0.42.0
+lastversion: 0.43.1
 customcommandshistory:
     - vim .
     - h
@@ -28,6 +39,7 @@ customcommandshistory:
 hidecommandlog: false
 ignorewhitespaceindiffview: true
 diffcontextsize: 3
+renamesimilaritythreshold: 50
 localbranchsortorder: recency
 remotebranchsortorder: alphabetical
 gitlogorder: topo-order

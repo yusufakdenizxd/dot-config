@@ -1,0 +1,11 @@
+# /Users/yusufakdeniz/.config/tmuxinator/harvard-ai03.yml
+
+name: harvard-ai-03
+root: ~/dev/harvard/ai/03
+
+windows:
+  - vim:
+      layout: main-vertical
+      panes:
+        - vim .
+  - run:

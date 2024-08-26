@@ -1,0 +1,11 @@
+# /Users/yusufakdeniz/.config/tmuxinator/ziglings.yml
+
+name: ziglings
+root: ~/dev/ziglings.org
+
+windows:
+  - editor:
+      layout: main-vertical
+      panes:
+        - vim .
+  - test:

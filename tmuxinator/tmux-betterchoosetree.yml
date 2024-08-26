@@ -1,0 +1,10 @@
+# /Users/yusufakdeniz/.config/tmuxinator/tmux-betterchoosetree.yml
+
+name: tmux-betterchoosetree
+root: ~/dev/tmux-betterchoosetree
+
+windows:
+  - vim:
+      layout: main-vertical
+      panes:
+        - vim .

@@ -29,9 +29,8 @@ hyper - 7: yabai -m space --focus 7
 hyper - 8: yabai -m space --focus 8
 hyper - 9: yabai -m space --focus 9
 
-hyper - return : open -a Alacritty
-hyper - f : open -a Vivaldi
-
+hyper - return : /usr/bin/open -a Kitty
+hyper - f : /usr/bin/open -a 'Zen Browser'
 
 rcmd - f         : yabai -m window --toggle zoom-fullscreen
 shift + ralt - f : yabai -m window --toggle native-fullscreen

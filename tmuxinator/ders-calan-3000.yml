@@ -1,0 +1,8 @@
+# /Users/yusufakdeniz/.config/tmuxinator/ders-calan-300.yml
+
+name: ders-calan-3000
+root: ~/dev/ders-calan-3000
+windows:
+  - vim:
+      panes:
+        - nvim .

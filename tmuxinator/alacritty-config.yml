@@ -1,8 +1,0 @@
-name: alacritty-config
-root: ~/dev/dot-config/alacritty
-
-windows:
-  - vim:
-      layout: main-vertical
-      panes:
-        - nvim alacritty.toml

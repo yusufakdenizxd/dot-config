@@ -1,0 +1,10 @@
+# /Users/yusufakdeniz/.config/tmuxinator/nowplaying-cli.yml
+
+name: nowplaying-cli
+root: ~/dev/nowplaying-cli
+
+windows:
+  - vim:
+      layout: main-vertical
+      panes:
+        - vim .

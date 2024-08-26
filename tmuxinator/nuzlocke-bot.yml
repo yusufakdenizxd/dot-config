@@ -1,0 +1,10 @@
+# /Users/yusufakdeniz/.config/tmuxinator/nuzlocke-bot.yml
+
+name: nuzlocke-bot
+root: ~/dev/nuzlocke-bot
+
+windows:
+  - parser vim:
+      layout: main-vertical
+      panes:
+        - vim parser

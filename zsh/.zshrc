@@ -16,8 +16,7 @@ source ~/dev/dot-config/zsh/.zsh_env
 source ~/dev/dot-config/zsh/.zsh_alias
 
 eval $(/opt/homebrew/bin/brew shellenv)
-#eval "$(starship init zsh)"
-#
+
 eval "$(zoxide init zsh)"
 
 function set_name () {echo -ne "\033]0;Mac Terminal\007" }
@@ -36,11 +35,7 @@ PATH=~/.console-ninja/.bin:$PATH
 ## [/Completion]
 
 export PATH="/Users/yusufakdeniz/.shorebird/bin:$PATH"
-
-
-# Herd injected PHP 8.3 configuration.
 export HERD_PHP_83_INI_SCAN_DIR="/Users/yusufakdeniz/Library/Application Support/Herd/config/php/83/"
-
 
 # Herd injected PHP binary.
 export PATH="/Users/yusufakdeniz/Library/Application Support/Herd/bin/":$PATH

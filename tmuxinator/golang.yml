@@ -4,5 +4,5 @@ windows:
   - vim:
       layout: main-vertical
       panes:
-        - vim
+        - vim .
         - zsh

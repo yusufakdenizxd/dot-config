@@ -1,9 +1,8 @@
-name: zig
-root: ~/dev/zig
+name: leetcode
+root: ~/
 
 windows:
   - vim:
       layout: main-vertical
       panes:
-        - vim
-  - run:
+        - vim leetcode.nvim

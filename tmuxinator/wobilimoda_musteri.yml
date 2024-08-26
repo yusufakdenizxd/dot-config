@@ -1,0 +1,11 @@
+# /Users/yusufakdeniz/.config/tmuxinator/wobilimoda_musteri.yml
+
+name: wobilimoda_musteri
+root: ~/work/wobilimoda
+
+windows:
+  - vim:
+      layout: main-vertical
+      panes:
+        - nvim .
+  - run:

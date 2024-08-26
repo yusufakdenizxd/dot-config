@@ -1,0 +1,10 @@
+# /Users/yusufakdeniz/.config/tmuxinator/zellij.yml
+
+name: zellij
+root: ~/.config/zellij
+
+windows:
+  - vim:
+      layout: main-vertical
+      panes:
+        - nvim .

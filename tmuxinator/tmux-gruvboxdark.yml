@@ -1,0 +1,10 @@
+# /Users/yusufakdeniz/.config/tmuxinator/tmux-gruvboxdark.yml
+
+name: tmux-gruvboxdark
+root: ~/dev/tmux-gruvboxdark/
+
+windows:
+  - vim:
+      layout: main-vertical
+      panes:
+        - vim .

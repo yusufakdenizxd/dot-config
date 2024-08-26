@@ -1,0 +1,10 @@
+# /Users/yusufakdeniz/.config/tmuxinator/compiler-in-go.yml
+
+name: compiler-in-go
+root: ~/dev/compiler-in-go
+
+windows:
+  - vim:
+      layout: main-vertical
+      panes:
+        - nvim .

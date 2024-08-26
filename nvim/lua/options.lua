@@ -10,7 +10,6 @@ opt.foldmethod = "expr"
 
 opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
 
--- Indenting
 opt.expandtab = true
 opt.shiftwidth = 2
 opt.smartindent = true
@@ -20,19 +19,20 @@ opt.softtabstop = 2
 opt.ignorecase = true
 opt.smartcase = true
 opt.mouse = "a"
-
 opt.mousemodel = "extend"
+
 opt.showmode = false
 
 opt.scrolloff = 10
 
--- Numbers
 opt.relativenumber = true
+opt.number = true
 opt.ruler = false
 
 opt.wrap = false
 
 opt.cursorline = false
+opt.cursorlineopt = "number"
 opt.signcolumn = "yes"
 opt.splitbelow = true
 opt.splitright = true
