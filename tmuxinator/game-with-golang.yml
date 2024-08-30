@@ -1,0 +1,11 @@
+# /Users/yusufakdeniz/.config/tmuxinator/game-with-golang.yml
+
+name: game-with-golang
+root: ~/dev/game-with-golang
+
+windows:
+  - vim:
+      layout: main-vertical
+      panes:
+        - vim
+        - guard

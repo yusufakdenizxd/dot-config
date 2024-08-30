@@ -180,7 +180,9 @@ return {
 				sources = cmp.config.sources({
 					{ name = "luasnip" },
 					{ name = "nvim_lsp" },
-				}, { { name = "buffer" } }),
+					{ name = "path" },
+					{ name = "buffer" },
+				}),
 			})
 			-- cmp.setup.cmdline(":", {
 			-- 	mapping = cmp.mapping.preset.cmdline(),

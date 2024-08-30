@@ -44,6 +44,7 @@ return {
 				"gopls",
 				"zls",
 				"pyright",
+				"bashls",
 			}
 			local _border = "single"
 			vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
@@ -110,6 +111,10 @@ return {
 				},
 			})
 
+			vim.keymap.del("n", "grr")
+			vim.keymap.del("n", "gra")
+			vim.keymap.del("n", "grn")
+
 			vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, { desc = "Go To Previous Diagnostic" })
 			vim.keymap.set("n", "]d", vim.diagnostic.goto_next, { desc = "Go To Next Diagnostic" })
 
@@ -147,7 +152,7 @@ return {
 						vim.lsp.buf.type_definition,
 						{ buffer = args.buf, desc = "Go To type Definition" }
 					)
-					vim.keymap.set("n", "Q", vim.lsp.buf.rename, { buffer = args.buf, desc = "Rename" })
+					vim.keymap.set("n", "gs", vim.lsp.buf.rename, { buffer = args.buf, desc = "Rename" })
 					vim.keymap.set(
 						{ "n", "v" },
 						"<M-x>",

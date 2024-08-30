@@ -9,6 +9,7 @@ return {
 	{ "rebelot/kanagawa.nvim" },
 	{ "EdenEast/nightfox.nvim" },
 	{ "embark-theme/vim" },
+	{ "rmehri01/onenord.nvim" },
 
 	{
 		"zaldih/themery.nvim",
@@ -46,6 +47,11 @@ return {
 						name = "Nord",
 						colorscheme = "nord",
 					},
+					{
+						name = "One Nord",
+						colorscheme = "onenord",
+					},
+
 					{
 						name = "Embark",
 						colorscheme = "embark",

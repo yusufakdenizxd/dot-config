@@ -23,7 +23,7 @@ return {
 				},
 			},
 		})
-
+		--FIX: FIXME TODO TODOD
 		vim.keymap.set("n", "gr", function()
 			fzf.lsp_references()
 		end, { desc = "Find All Lsp References" })
@@ -35,6 +35,7 @@ return {
 		vim.keymap.set("n", "<M-t>", function()
 			fzf.live_grep_native({ search = [[\b(?:TODO|HACK|PERF|NOTE|FIX)\b]], no_esc = true })
 		end, { desc = "Find All TODOS (Fzf)" })
+
 		vim.keymap.set("n", "<Tab>", "<cmd>FzfLua buffers<cr>", { desc = "Buffers Fzf" })
 		vim.keymap.set("n", "<S-Tab>", "<cmd>FzfLua files<cr>", { desc = "Files Fzf" })
 		vim.keymap.set("n", "<C-Tab>", "<cmd>FzfLua files<cr>", { desc = "Files Fzf" })
