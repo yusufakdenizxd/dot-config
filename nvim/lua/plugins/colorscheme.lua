@@ -1,15 +1,16 @@
 return {
-	{ "ellisonleao/gruvbox.nvim" },
-	{ "sainnhe/gruvbox-material" },
-	{ "sainnhe/everforest" },
-	{ "rose-pine/neovim", name = "rose-pine" },
-	{ "folke/tokyonight.nvim" },
-	{ "AlexvZyl/nordic.nvim" },
-	{ "gbprod/nord.nvim" },
-	{ "rebelot/kanagawa.nvim" },
-	{ "EdenEast/nightfox.nvim" },
-	{ "embark-theme/vim" },
-	{ "rmehri01/onenord.nvim" },
+	{ "ellisonleao/gruvbox.nvim", lazy = true },
+	{ "sainnhe/gruvbox-material", lazy = true },
+	{ "sainnhe/everforest", lazy = true },
+	{ "rose-pine/neovim", name = "rose-pine", lazy = true },
+	{ "folke/tokyonight.nvim", lazy = true },
+	{ "AlexvZyl/nordic.nvim", lazy = true },
+	{ "gbprod/nord.nvim", lazy = true },
+	{ "rebelot/kanagawa.nvim", lazy = true },
+	{ "EdenEast/nightfox.nvim", lazy = true },
+	{ "embark-theme/vim", lazy = true },
+	{ "rmehri01/onenord.nvim", lazy = true },
+	{ "luisiacc/gruvbox-baby", lazy = true },
 
 	{
 		"zaldih/themery.nvim",
@@ -27,6 +28,11 @@ return {
 					{
 						name = "Gruvbox Material",
 						colorscheme = "gruvbox-material",
+					},
+
+					{
+						name = "Gruvbox Baby",
+						colorscheme = "gruvbox-baby",
 					},
 
 					{

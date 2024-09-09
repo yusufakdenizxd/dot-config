@@ -16,7 +16,6 @@ map("n", "<Space>wK", "<cmd>WhichKey <CR>", { desc = "All Whickey Mappings" })
 -- Buffer Managment
 map("n", "<C-q>", "<cmd> bd <CR>", { desc = "Quit Buffer" })
 map("n", "<C-S-q>", "<cmd> bd! <CR>", { desc = "Force Quit Buffer" })
-map("n", "<Space>bo", "<cmd>%bd|e#<cr>", { desc = "Close all buffers but the current one" })
 
 -- Buffer Movement
 map("n", "<C-h>", "<C-w>h", { desc = "Switch window left" })

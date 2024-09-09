@@ -21,10 +21,6 @@ return {
 	{
 		"williamboman/mason-lspconfig.nvim",
 		dependencies = { "neovim/nvim-lspconfig", "williamboman/mason.nvim" },
-		opts = {
-			ensure_installed = {},
-			automatic_installation = true,
-		},
 	},
 	{
 		"neovim/nvim-lspconfig",
@@ -32,14 +28,12 @@ return {
 			local servers = {
 				"rust_analyzer",
 				"lua_ls",
-				"csharp_ls",
 				"clangd",
 				"cssls",
 				"html",
 				"jsonls",
-				"marksman",
 				"yamlls",
-				"tsserver",
+				"ts_ls",
 				"phpactor",
 				"gopls",
 				"zls",
@@ -69,6 +63,7 @@ return {
 						settings = {
 							Lua = {
 								diagnostics = {
+									-- Get the language server to recognize the `vim` global
 									globals = { "vim" },
 								},
 							},
@@ -105,7 +100,6 @@ return {
 				cmd = { "dart", "language-server", "--protocol=lsp" },
 				settings = {
 					dart = {
-
 						lineLength = 100000,
 					},
 				},
@@ -127,12 +121,6 @@ return {
 				callback = function(args)
 					vim.bo[args.buf].omnifunc = "v:lua.vim.lsp.omnifunc"
 
-					vim.keymap.set(
-						"n",
-						"gD",
-						vim.lsp.buf.declaration,
-						{ buffer = args.buf, desc = "Go To Declaration" }
-					)
 					vim.keymap.set("n", "gd", vim.lsp.buf.definition, { buffer = args.buf, desc = "Go To Definition" })
 					vim.keymap.set("n", "K", vim.lsp.buf.hover, { buffer = args.buf, desc = "Hover" })
 
@@ -148,7 +136,7 @@ return {
 					)
 					vim.keymap.set(
 						"n",
-						"<Space>D",
+						"gD",
 						vim.lsp.buf.type_definition,
 						{ buffer = args.buf, desc = "Go To type Definition" }
 					)

@@ -3,7 +3,7 @@
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
-    selected=$(find ~/work ~/dev ~/dev/dot-config ~/github  -mindepth 1 -maxdepth 1 -type d | fzf --tmux center,25%,50% --layout reverse --prompt="Sessions: ")
+    selected=$(find ~/work ~/dev ~/dev/dot-config ~/github  -mindepth 1 -maxdepth 1 -type d | fzf --tmux center,35%,50% --layout reverse --prompt="Sessions: ")
 fi
 
 if [[ -z $selected ]]; then

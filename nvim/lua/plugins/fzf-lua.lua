@@ -28,9 +28,17 @@ return {
 			fzf.lsp_references()
 		end, { desc = "Find All Lsp References" })
 
-		vim.keymap.set("n", "<Space>ef", function()
+		vim.keymap.set("n", "<Space>ee", function()
 			fzf.diagnostics_workspace({ severity_only = "Error" })
 		end, { desc = "Find All Errors (Fzf)" })
+
+		vim.keymap.set("n", "<Space>ea", function()
+			fzf.diagnostics_workspace({})
+		end, { desc = "Find All Diagnostics (Fzf)" })
+
+		vim.keymap.set("n", "<Space>ei", function()
+			fzf.diagnostics_workspace({ severity_only = "Info" })
+		end, { desc = "Find All Infos (Fzf)" })
 
 		vim.keymap.set("n", "<M-t>", function()
 			fzf.live_grep_native({ search = [[\b(?:TODO|HACK|PERF|NOTE|FIX)\b]], no_esc = true })
