@@ -1,8 +1,0 @@
-name: leetcode
-root: ~/
-
-windows:
-  - vim:
-      layout: main-vertical
-      panes:
-        - vim leetcode.nvim

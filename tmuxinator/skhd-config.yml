@@ -1,8 +1,0 @@
-name: skdh-config
-root: ~/dev/dot-config/skhd
-
-windows:
-  - vim:
-      layout: main-vertical
-      panes:
-        - nvim skhdrc

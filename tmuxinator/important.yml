@@ -1,7 +1,0 @@
-# /Users/yusufakdeniz/.config/tmuxinator/important.yml
-
-name: important
-root: ~/important/
-
-windows:
-  - zsh:

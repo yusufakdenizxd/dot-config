@@ -1,8 +1,0 @@
-# /Users/yusufakdeniz/.config/tmuxinator/nu-config.yml
-
-name: nu-config
-root: ~/
-
-windows:
-  - nu: config nu
-  - env: config env

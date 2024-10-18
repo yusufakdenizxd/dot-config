@@ -1,8 +1,0 @@
-name: neovim-config
-root: ~/dev/dot-config/nvim
-
-windows:
-  - vim:
-      layout: main-vertical
-      panes:
-        - nvim .

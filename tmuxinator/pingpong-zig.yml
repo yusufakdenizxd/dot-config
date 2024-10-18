@@ -1,9 +1,0 @@
-# /Users/yusufakdeniz/.config/tmuxinator/pingpong-zig.yml
-
-name: pingpong-zig
-root: ~/dev/pingpong
-
-windows:
-  - vim:
-      layout: main-vertical
-        - nvim .

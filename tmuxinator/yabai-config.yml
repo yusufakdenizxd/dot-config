@@ -1,8 +1,0 @@
-name: yabai-config
-root: ~/dev/dot-config/yabai
-
-windows:
-  - vim:
-      layout: main-vertical
-      panes:
-        - nvim yabairc

@@ -1,8 +1,0 @@
-name: tmuxinator-config
-root: ~/dev/dot-config/tmuxinator
-
-windows:
-  - vim:
-      layout: main-vertical
-      panes:
-        - nvim .
