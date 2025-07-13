@@ -8,7 +8,6 @@ sudo yabai --load-sa
 # Global Settings
 yabai -m config mouse_follows_focus          off
 yabai -m config focus_follows_mouse          off
-yabai -m config window_placement             second_child
 #yabai -m config window_topmost               off
 yabai -m config window_topmost off
 
@@ -30,13 +29,15 @@ yabai -m config mouse_drop_action            swap
 yabai -m config window_animation_duration    0.1
 
 yabai -m config layout                       bsp
-yabai -m config top_padding                  0
-yabai -m config bottom_padding               0
-# yabai -m config bottom_padding               30
-yabai -m config left_padding                 0
-yabai -m config right_padding                0
-yabai -m config window_gap                   12
+yabai -m config top_padding                  2
+yabai -m config bottom_padding               2
+yabai -m config left_padding                 2
+yabai -m config right_padding                2
+yabai -m config window_gap                   2
 
-yabai -m rule --add label=emacs app=Emacs manage=on
+yabai -m config --space 1 top_padding                  0
+yabai -m config --space 1 bottom_padding               0
+yabai -m config --space 1 left_padding                 0
+yabai -m config --space 1 right_padding                0
 
 echo "yabai configuration loaded.."

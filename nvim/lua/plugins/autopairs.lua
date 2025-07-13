@@ -14,20 +14,6 @@ return {
 		})
 		local rule = require("nvim-autopairs.rule")
 
-		autopairs.add_rules({
-			rule("<", ">"):with_pair(function(opts)
-				return opts.next_char ~= ">"
-			end),
-			rule(">", ">")
-				:with_pair(function(_)
-					return false
-				end)
-				:with_move(function(opts)
-					return opts.char == ">"
-				end)
-				:use_key(">"),
-		})
-
 		local cmp_autopairs = require("nvim-autopairs.completion.cmp")
 		local cmp = require("cmp")
 		cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())

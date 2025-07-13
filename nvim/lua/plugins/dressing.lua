@@ -5,20 +5,14 @@ return {
 		"MunifTanjim/nui.nvim",
 	},
 	opts = {
+		input = {
+			enabled = true,
+		},
 		select = {
 			get_config = function(opts)
 				if opts.kind == "codeaction" then
 					return {
-						backend = "fzf_lua",
-						fzf_lua = {
-							prompt = "> ",
-							winopts = {
-								height = 0.4,
-								width = 0.45,
-								row = 0.5,
-								column = 0.3,
-							},
-						},
+						backend = "telescope",
 					}
 					-- return {
 					-- 	backend = "nui",

@@ -1,5 +1,4 @@
 local map = vim.keymap.set
-
 -- Oil File Manager
 map("n", "<C-n>", "<cmd>Oil<CR>", { desc = "Open File Explorer" })
 
@@ -8,7 +7,10 @@ map("n", "<C-n>", "<cmd>Oil<CR>", { desc = "Open File Explorer" })
 
 map({ "n", "v" }, "<Space>d", '"_d', { desc = "Delete Without Copying" })
 map({ "n", "v" }, "<Space>c", '"_c', { desc = "Edit Without Copying" })
--- map("v", "<Space>p", "_d[p", { desc = "Paste Without Copying" })
+map("v", "<Space>p", '"_d[p', { desc = "Paste Without Copying" })
+
+map({ "n", "v" }, "<ScrollWheelRight>", "<Nop>", { desc = "Edit Without Copying" })
+map({ "n", "v" }, "<ScrollWheelLeft>", "<Nop>", { desc = "Edit Without Copying" })
 
 -- All Whickey
 map("n", "<Space>wK", "<cmd>WhichKey <CR>", { desc = "All Whickey Mappings" })
@@ -18,10 +20,17 @@ map("n", "<C-q>", "<cmd> bd <CR>", { desc = "Quit Buffer" })
 map("n", "<C-S-q>", "<cmd> bd! <CR>", { desc = "Force Quit Buffer" })
 
 -- Buffer Movement
+--
+map("n", "J", "<cmd>bnext<CR>", { desc = "Next Buffer" })
+map("n", "K", "<cmd>bprev<CR>", { desc = "Previous Buffer" })
+map("n", "<M-]>", "<cmd>bnext<CR>", { desc = "Next Buffer" })
+map("n", "<M-[>", "<cmd>bprev<CR>", { desc = "Previous Buffer" })
 map("n", "<C-h>", "<C-w>h", { desc = "Switch window left" })
 map("n", "<C-l>", "<C-w>l", { desc = "Switch window right" })
 map("n", "<C-j>", "<C-w>j", { desc = "Switch window down" })
 map("n", "<C-k>", "<C-w>k", { desc = "Switch window up" })
+map("n", "<w", "5<C-w>>", { desc = "Increase Width" })
+map("n", ">w", "5<C-w><", { desc = "Descrease Width" })
 
 -- Buffer Splits
 map("n", "<C-c>", "<cmd>vsplit<cr>", { desc = "Vertical Split" })
@@ -43,8 +52,6 @@ map({ "n", "v" }, "-", "_")
 map({ "n", "v" }, "_", "-")
 map({ "n", "v" }, "=", "$")
 
-map({ "n", "v" }, "s", "<Nop>")
-map("n", "ss", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]], { desc = "Subsitute Word On Cursor" })
 -- comment.nvim
 map("n", "gc", function()
 	require("Comment.api").toggle.linewise.current()

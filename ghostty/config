@@ -1,0 +1,54 @@
+background-opacity = 0.7
+macos-titlebar-style = none
+
+mouse-hide-while-typing = true
+macos-option-as-alt = true
+
+
+font-family = "CaskaydiaCove Nerd Font Mono"
+font-thicken = true
+
+command = "/opt/homebrew/bin/tmux new-session -A -D -s dev -c /Users/akdeniz/dev/"
+keybind = clear
+
+keybind = cmd+f=text:\x01f
+keybind = cmd+v=paste_from_clipboard
+keybind = cmd+shift+,=reload_config
+
+keybind = cmd+a=text:\x01c
+keybind = cmd+z=text:\x01z
+keybind = cmd+x=text:\x01x
+
+keybind = cmd+|=decrease_font_size:1
+keybind = cmd+\=increase_font_size:1
+
+keybind = cmd+shift+x=text:\x01X
+keybind = cmd+shift+g=text:\x01G
+keybind = cmd+shift+d=text:\x01D
+keybind = cmd+w=text:\x01w
+keybind = cmd+;=text:\x01:
+keybind = cmd+,=text:\x01,
+keybind = cmd+n=text:\x01t
+keybind = cmd+shift+n=text:\x01T
+keybind = cmd+shift+c=text:\x01C
+
+keybind = cmd+p=text:\x01[
+keybind = cmd+[=text:\x01p
+keybind = cmd+]=text:\x01n
+
+keybind = cmd+shift+[=text:\x01-
+keybind = cmd+shift+]=text:\x01=
+
+keybind = cmd+b=text:\x01v
+keybind = cmd+g=text:\x01s
+
+keybind = cmd+1=text:\x011
+keybind = cmd+2=text:\x012
+keybind = cmd+3=text:\x013
+keybind = cmd+4=text:\x014
+keybind = cmd+5=text:\x015
+keybind = cmd+6=text:\x016
+keybind = cmd+7=text:\x017
+keybind = cmd+8=text:\x018
+keybind = cmd+9=text:\x019
+

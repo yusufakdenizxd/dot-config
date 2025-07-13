@@ -1,41 +1,24 @@
 return {
 	{
 		"vhyrro/luarocks.nvim",
-		priority = 1000, -- Very high priority is required, luarocks.nvim should run as the first plugin in your config.
+		priority = 1000,
 		config = true,
+	},
+	{
+		"ggandor/leap.nvim",
+		config = function()
+			require("leap").create_default_mappings()
+		end,
 	},
 	{
 		"numToStr/Comment.nvim",
 	},
 
-	{
-		"xiyaowong/transparent.nvim",
-		config = true,
-	},
+	{ "windwp/nvim-ts-autotag", config = true },
 	{
 		"folke/todo-comments.nvim",
 		dependencies = { "nvim-lua/plenary.nvim" },
 		opts = {},
-	},
-	{
-		"stevearc/oil.nvim",
-		opts = {
-			skip_confirm_for_simple_edits = true,
-			keymaps = {
-				["<C-h>"] = false,
-				["<C-l>"] = false,
-				["<C-k>"] = false,
-				["<C-j>"] = false,
-				["<M-l>"] = "actions.refresh",
-				["<M-h>"] = "actions.select_split",
-			},
-			columns = { "icon" },
-			view_options = {
-				show_hidden = true,
-			},
-		},
-		-- Optional dependencies
-		dependencies = { "nvim-tree/nvim-web-devicons" },
 	},
 	{
 		"aserowy/tmux.nvim",
@@ -51,15 +34,6 @@ return {
 		"unblevable/quick-scope",
 	},
 	{
-		"folke/which-key.nvim",
-		event = "VeryLazy",
-		init = function()
-			vim.o.timeout = true
-			vim.o.timeoutlen = 2200
-		end,
-		opts = {},
-	},
-	{
 		"MagicDuck/grug-far.nvim",
 		config = true,
 	},
@@ -68,20 +42,5 @@ return {
 		version = "*",
 		event = "VeryLazy",
 		config = true,
-	},
-	{
-		"kawre/leetcode.nvim",
-		build = ":TSUpdate html",
-		lazy = "leetcode.nvim" ~= vim.fn.argv()[1],
-		cmd = "Leet",
-		opts = { arg = "leetcode.nvim", lang = "python3" },
-		dependencies = {
-			"nvim-telescope/telescope.nvim",
-			"nvim-lua/plenary.nvim",
-			"MunifTanjim/nui.nvim",
-			-- optional
-			"nvim-treesitter/nvim-treesitter",
-			"nvim-tree/nvim-web-devicons",
-		},
 	},
 }

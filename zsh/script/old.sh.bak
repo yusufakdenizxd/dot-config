@@ -1,0 +1,43 @@
+CURRENT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+CURRENT="$(tmux display-message -p '#S')"
+if [[ $# -eq 1 ]]; then
+    selected=$1
+else
+HEADER="ctrl-m=Main ctrl-c=Config ctrl-l=Leetcode ctrl-p=Playground"
+find_all(){
+  find ~/work ~/dev ~/learn ~/dev/dot-config ~/playground/javascript ~/playground/python ~/playground/go ~/github  -mindepth 1 -maxdepth 1 -type d 
+}
+LIST=(~/work ~/dev)
+args=(
+  --tmux center,40%,60% 
+    # --header="$HEADER"
+  --bind "ctrl-n:reload(find ~/work ~/dev ~/github  -mindepth 1 -maxdepth 1 -type d)"
+  --bind "ctrl-c:reload(find ~/dev/dot-config  -mindepth 1 -maxdepth 1 -type d)"
+  --bind "ctrl-l:reload(find ~/leetcode  -mindepth 1 -maxdepth 1 -type d)"
+  --bind "ctrl-p:reload(find ~/playground  -mindepth 2 -maxdepth 2 -type d)"
+  --bind "ctrl-a:reload(find ~/learn ~/work ~/dev ~/dev/dot-config ~/playground/javascript ~/playground/python ~/playground/go ~/dev/dot-config ~/github  -mindepth 1 -maxdepth 1 -type d)"
+  --prompt="Folders: "
+  --layout reverse
+)
+if [[ -n $TMUX ]] ; then
+    selected=$(find_all | fzf "${args[@]}" )
+  else 
+    selected=$(find ~/work ~/dev ~/leetcode ~/dev/dot-config ~/github  -mindepth 1 -maxdepth 1 -type d | fzf "${args[@]}")
+  fi
+fi
+if [[ -z $selected ]]; then
+    exit 0
+fi
+selectedname=$(basename "$selected" | tr . )
+is_tmux_running=$(pgrep tmux)
+if [[ -z $TMUX ]] && [[ -z $is_tmux_running ]]; then
+    tmux new-session -s $selected_name -c $selected
+    exit 0
+fi
+if ! tmux has-session -t=$selected_name 2> /dev/null; then
+    tmux new-session -ds $selected_name -c $selected
+fi
+if [[ -z $TMUX ]] ; then
+    tmux attach
+fi
+tmux switch-client -t $selected_name

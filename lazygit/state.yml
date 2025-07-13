@@ -1,46 +1,33 @@
 lastupdatecheck: 0
 recentrepos:
-    - /Users/yusufakdeniz/dev/dot-config
-    - /Users/yusufakdeniz/work/tabav2
-    - /Users/yusufakdeniz/important
-    - /Users/yusufakdeniz/work/nobel_expo_codebase
-    - /Users/yusufakdeniz/work/nobel_expo_admin
-    - /Users/yusufakdeniz/work/nobel_expo
-    - /Users/yusufakdeniz/dev/game-with-golang
-    - /Users/yusufakdeniz/dev/lumina
-    - /Users/yusufakdeniz/work/wobilimoda_codebase
-    - /Users/yusufakdeniz/work/wobilimoda
-    - /Users/yusufakdeniz/work/mobiliyum
-    - /Users/yusufakdeniz/work/kuryem_admin
-    - /Users/yusufakdeniz/work/kurye_surucu
-    - /Users/yusufakdeniz/work/kurye_codebase
-    - /Users/yusufakdeniz/work/kurye
-    - /Users/yusufakdeniz/work/kocaaga
-    - /Users/yusufakdeniz/work/isdetay
-    - /Users/yusufakdeniz/work/golkent
-    - /Users/yusufakdeniz/work/ewros_atlas
-    - /Users/yusufakdeniz/work/Ecommerce-admin
-    - /Users/yusufakdeniz/Pictures/wallpaper
-    - /Users/yusufakdeniz/work/keys
-    - /Users/yusufakdeniz/dev/tmux-gruvboxdark
-    - /Users/yusufakdeniz/dev/tmux-betterchoosetree
-    - /Users/yusufakdeniz/dev/Script-Master
-    - /Users/yusufakdeniz/dev/recapp
-    - /Users/yusufakdeniz/dev/ders-calan-3000
-    - /Users/yusufakdeniz/dev/oil-vscode
-    - /Users/yusufakdeniz/github/pr/flutterfire
-    - /Users/yusufakdeniz/dev/compiler-in-go
-    - /Users/yusufakdeniz/dev/ziglings.org
-    - /Users/yusufakdeniz/dev/medimux
-    - /Users/yusufakdeniz/work/story
-    - /Users/yusufakdeniz/dev/medimux/medimux-server
-    - /Users/yusufakdeniz/dev/nuzlocke-bot
-    - /Users/yusufakdeniz/work/filament_resources
-    - /Users/yusufakdeniz/dev/nowplaying-cli
-    - /Users/yusufakdeniz/dev/task-list
-    - /Users/yusufakdeniz/work/proforma
+    - /Users/akdeniz/dev/dot-config
+    - /Users/akdeniz/.emacs.d
+    - /Users/akdeniz/dev/benihime
+    - /Users/akdeniz/dev/kiroku.nvim
+    - /Users/akdeniz/dev/pokemon-dimensions
+    - /Users/akdeniz/personal/wiki
+    - /Users/akdeniz/dev/hayami.nvim
+    - /Users/akdeniz/dev/tmux_sessionizer
+    - /Users/akdeniz/work/wobilimoda
+    - /Users/akdeniz/dev/rustemon
+    - /Users/akdeniz/dev/roll-your-own-auth
+    - /Users/akdeniz/dev/minecraft-in-zig
+    - /Users/akdeniz/dev/project-finder
+    - /Users/akdeniz/work/todo
+    - /Users/akdeniz/dev/wukong
+    - /Users/akdeniz/dev/gymmi
+    - /Users/akdeniz/dev/blastoise
+    - /Users/akdeniz/work/tabav2
+    - /Users/akdeniz/dev/tmux-lazygit
+    - /Users/akdeniz/dev/game_of_life
+    - /Users/akdeniz/dev/json_parser
+    - /Users/akdeniz/playground/javascript/t3-stack
+    - /Users/akdeniz/dev/story
+    - /Users/akdeniz/dev/Script-Master
+    - /Users/akdeniz/work/kurye_codebase
+    - /Users/akdeniz/work/nobel_expo_codebase
 startuppopupversion: 5
-lastversion: 0.43.1
+lastversion: 0.48.0
 customcommandshistory:
     - vim .
     - h

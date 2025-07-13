@@ -7,8 +7,8 @@ return {
 
 		conform.setup({
 			formatters_by_ft = {
-				javascript = { "eslint_d" },
-				typescript = { "eslint_d" },
+				javascript = { "prettier" },
+				typescript = { "prettier" },
 				javascriptreact = { "prettier" },
 				typescriptreact = { "prettier" },
 				svelte = { "prettier" },
@@ -46,7 +46,7 @@ return {
 			conform.format({
 				lsp_fallback = true,
 				async = false,
-				timeout_ms = 500,
+				timeout_ms = 1000,
 			})
 		end, { desc = "Format file or range (in visual mode)" })
 	end,

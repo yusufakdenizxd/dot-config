@@ -49,53 +49,6 @@
                         ]
                     },
                     {
-                        "description": "CapsLock to Hyper",
-                        "manipulators": [
-                            {
-                                "description": "capslock = esc(click) | hyper(hold)",
-                                "from": {
-                                    "key_code": "caps_lock",
-                                    "modifiers": { "optional": ["any"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_shift",
-                                        "modifiers": ["right_command", "right_control", "right_option"]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "spacebar = language switch",
-                                "from": {
-                                    "key_code": "spacebar",
-                                    "modifiers": { "mandatory": ["right_command", "right_control", "right_shift", "right_option"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "spacebar",
-                                        "modifiers": ["right_command", "right_shift", "right_option"]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "command + spacebar = emoji",
-                                "from": {
-                                    "key_code": "spacebar",
-                                    "modifiers": { "mandatory": ["left_command", "right_command", "right_control", "right_shift", "right_option"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "spacebar",
-                                        "modifiers": ["left_control", "left_command"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Hyper Navigation",
                         "manipulators": [
                             {
@@ -587,6 +540,70 @@
                         ]
                     },
                     {
+                        "description": "CapsLock to Hyper",
+                        "manipulators": [
+                            {
+                                "description": "capslock = esc(click) | hyper(hold)",
+                                "from": {
+                                    "key_code": "caps_lock",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_shift",
+                                        "modifiers": ["right_command", "right_control", "right_option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "description": "ESC equal to CapsLock",
+                                "from": {
+                                    "key_code": "escape",
+                                    "modifiers": {
+                                        "mandatory": ["right_command", "right_control", "right_shift", "right_option"],
+                                        "optional": ["caps_lock"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "caps_lock",
+                                        "modifiers": ["left_control"]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "description": "spacebar = language switch",
+                                "from": {
+                                    "key_code": "spacebar",
+                                    "modifiers": { "mandatory": ["right_command", "right_control", "right_shift", "right_option"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "spacebar",
+                                        "modifiers": ["right_command", "right_shift", "right_option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "description": "command + spacebar = emoji",
+                                "from": {
+                                    "key_code": "spacebar",
+                                    "modifiers": { "mandatory": ["left_command", "right_command", "right_control", "right_shift", "right_option"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "spacebar",
+                                        "modifiers": ["left_control", "left_command"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Hyper Deletion",
                         "manipulators": [
                             {
@@ -825,10 +842,6 @@
                             "to": [{ "key_code": "right_option" }]
                         },
                         {
-                            "from": { "key_code": "non_us_backslash" },
-                            "to": [{ "key_code": "grave_accent_and_tilde" }]
-                        },
-                        {
                             "from": { "key_code": "right_option" },
                             "to": [{ "key_code": "right_command" }]
                         }
@@ -845,14 +858,6 @@
                         {
                             "from": { "key_code": "application" },
                             "to": [{ "key_code": "right_option" }]
-                        },
-                        {
-                            "from": { "key_code": "grave_accent_and_tilde" },
-                            "to": [{ "key_code": "non_us_backslash" }]
-                        },
-                        {
-                            "from": { "key_code": "non_us_backslash" },
-                            "to": [{ "key_code": "grave_accent_and_tilde" }]
                         },
                         {
                             "from": { "key_code": "right_option" },
@@ -884,6 +889,53 @@
                         "vendor_id": 7511
                     },
                     "ignore": false
+                },
+                {
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": true,
+                        "product_id": 64,
+                        "vendor_id": 1118
+                    },
+                    "ignore": false
+                },
+                {
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "product_id": 6973,
+                        "vendor_id": 6940
+                    },
+                    "simple_modifications": [
+                        {
+                            "from": { "key_code": "left_command" },
+                            "to": [{ "key_code": "left_option" }]
+                        },
+                        {
+                            "from": { "key_code": "left_option" },
+                            "to": [{ "key_code": "left_command" }]
+                        }
+                    ]
+                },
+                {
+                    "disable_built_in_keyboard_if_exists": true,
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "product_id": 13330,
+                        "vendor_id": 14
+                    }
+                },
+                {
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "product_id": 100,
+                        "vendor_id": 9580
+                    },
+                    "simple_modifications": [
+                        {
+                            "from": { "key_code": "e" },
+                            "to": [{ "key_code": "j" }]
+                        }
+                    ]
                 }
             ],
             "fn_function_keys": [
@@ -908,7 +960,8 @@
                     "to": [{ "key_code": "f9" }]
                 }
             ],
-            "name": "Default"
+            "name": "Default",
+            "virtual_hid_keyboard": { "keyboard_type_v2": "iso" }
         }
     ]
 }

@@ -32,29 +32,16 @@ return {
 				"cssls",
 				"html",
 				"jsonls",
-				"yamlls",
 				"ts_ls",
 				"phpactor",
 				"gopls",
 				"zls",
 				"pyright",
 				"bashls",
-			}
-			local _border = "single"
-			vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
-				border = _border,
-			})
-
-			vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, {
-				border = _border,
-			})
-
-			vim.diagnostic.config({
-				float = { border = _border },
-			})
-
-			require("lspconfig.ui.windows").default_options = {
-				border = _border,
+				"jdtls",
+				"zls",
+				"tailwindcss",
+				"cssls",
 			}
 
 			for _, server in ipairs(servers) do
@@ -62,17 +49,24 @@ return {
 					require("lspconfig")[server].setup({
 						settings = {
 							Lua = {
-								diagnostics = {
-									-- Get the language server to recognize the `vim` global
-									globals = { "vim" },
+								runtime = {
+									version = "LuaJIT", -- Neovim uses LuaJIT
 								},
+								diagnostics = {
+									globals = { "vim" }, -- avoid "undefined global 'vim'" error
+								},
+								workspace = {
+									library = vim.api.nvim_get_runtime_file("", true),
+									checkThirdParty = false,
+								},
+								telemetry = { enable = false },
 							},
 						},
 					})
 				elseif server == "clangd" then
 					require("lspconfig")[server].setup({
 						cmd = {
-							"/Users/yusufakdeniz/.local/share/nvim/mason/bin/clangd",
+							"/Users/akdeniz/.local/share/nvim/mason/bin/clangd",
 							"--clang-tidy=false",
 							"--completion-style=detailed",
 							"--header-insertion=never",
@@ -87,6 +81,20 @@ return {
 					})
 				elseif server == "zls" then
 					require("lspconfig")[server].setup({
+						settings = {
+							enable_snippets = true,
+							enable_ast_check_diagnostics = true,
+							enable_autofix = true,
+							enable_import_embedfile_argument_completions = true,
+							warn_style = true,
+							enable_semantic_tokens = true,
+							enable_inlay_hints = true,
+							inlay_hints_hide_redundant_param_names = true,
+							inlay_hints_hide_redundant_param_names_last_token = true,
+							operator_completions = true,
+							include_at_in_builtins = true,
+							max_detail_length = 1048576,
+						},
 						flags = {
 							debounce_text_changes = 150,
 						},
@@ -108,6 +116,7 @@ return {
 			vim.keymap.del("n", "grr")
 			vim.keymap.del("n", "gra")
 			vim.keymap.del("n", "grn")
+			vim.keymap.del("n", "gri")
 
 			vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, { desc = "Go To Previous Diagnostic" })
 			vim.keymap.set("n", "]d", vim.diagnostic.goto_next, { desc = "Go To Next Diagnostic" })
@@ -122,9 +131,11 @@ return {
 					vim.bo[args.buf].omnifunc = "v:lua.vim.lsp.omnifunc"
 
 					vim.keymap.set("n", "gd", vim.lsp.buf.definition, { buffer = args.buf, desc = "Go To Definition" })
-					vim.keymap.set("n", "K", vim.lsp.buf.hover, { buffer = args.buf, desc = "Hover" })
+					vim.keymap.set("n", "<Space>k", function()
+						vim.lsp.buf.hover({ border = "single" })
+					end)
 
-					vim.keymap.set("n", "J", function()
+					vim.keymap.set("n", "<Space>j", function()
 						vim.diagnostic.open_float()
 					end, { desc = "Open Float Error" })
 

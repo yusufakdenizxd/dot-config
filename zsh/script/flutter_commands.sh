@@ -16,7 +16,7 @@ commands["Build Appbundle Prod Flavor"]="build appbundle --flavor prod -t lib/ma
 commands["Build Ipa Prod Flavor"]="build ipa --flavor prod -t lib/main_prod.dart"
 
 # Show labels in fzf
-selected_label=$(printf "%s\n" "${!commands[@]}" | fzf --tmux center,20%,30% --layout reverse --prompt="Commands: " -m -1 -q "$1")
+selected_label=$(printf "%s\n" "${!commands[@]}" | fzf --height 30% --layout reverse --prompt="Commands: " -m -1 -q "$1")
 
 # Execute the corresponding command
 if [ -n "$selected_label" ]; then

@@ -1,14 +1,27 @@
 return {
 	"ibhagwan/fzf-lua",
+	enabled = false,
 	-- optional for icon support
 	dependencies = { "nvim-tree/nvim-web-devicons" },
 	config = function()
 		-- calling `setup` is optional for customization
 		local fzf = require("fzf-lua")
+
 		local actions = fzf.actions
+
 		fzf.setup({
 			{
-				"default-title",
+				-- "default-title",
+				"borderless_full",
+
+				winopts = {
+					height = 0.85,
+					width = 0.80,
+					row = 0.35,
+					col = 0.50,
+					border = "single",
+					winblend = 0,
+				},
 
 				actions = {
 					["alt-q"] = actions.quickfix,
@@ -20,10 +33,14 @@ return {
 						args = "--color=always --style=numbers,changes",
 						theme = "gruvbox-dark",
 					},
+					cat = {
+						cmd = "bat",
+						args = "--color=always --style=numbers,changes",
+						theme = "gruvbox-dark",
+					},
 				},
 			},
 		})
-		--FIX: FIXME TODO TODOD
 		vim.keymap.set("n", "gr", function()
 			fzf.lsp_references()
 		end, { desc = "Find All Lsp References" })

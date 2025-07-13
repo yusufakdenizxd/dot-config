@@ -40,6 +40,10 @@ opt.splitright = true
 opt.termguicolors = true
 opt.undofile = true
 
+opt.laststatus = 0
+opt.showcmd = false
+opt.cmdheight = 0
+
 -- add binaries installed by mason.nvim to path
 local is_windows = vim.loop.os_uname().sysname == "Windows_NT"
 vim.env.PATH = vim.env.PATH .. (is_windows and ";" or ":") .. vim.fn.stdpath("data") .. "/mason/bin"

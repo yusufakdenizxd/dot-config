@@ -28,11 +28,13 @@ hyper - 6: yabai -m space --focus 6
 hyper - 7: yabai -m space --focus 7
 hyper - 8: yabai -m space --focus 8
 hyper - 9: yabai -m space --focus 9
+hyper - 0: yabai -m space --focus 10
 
-hyper - return : /usr/bin/open -a Kitty
-hyper - f : /usr/bin/open -a 'Firefox'
+hyper - t : /usr/bin/open -a Kitty
+hyper - f : /usr/bin/open -a 'Brave Browser'
+hyper - s : /usr/bin/open -a 'Visual Studio Code'
+hyper - g : /usr/bin/open -a 'Preview'
+rcmd + alt - f : yabai -m window --toggle float
 
 rcmd - f         : yabai -m window --toggle zoom-fullscreen
 shift + ralt - f : yabai -m window --toggle native-fullscreen
-
-
