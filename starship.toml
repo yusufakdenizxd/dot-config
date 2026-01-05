@@ -40,10 +40,6 @@ disabled = true
 symbol = " "
 format = "[$symbol]($style)"
 
-[golang]
-symbol = " "
-format = "[$symbol]($style)"
-
 [haskell]
 symbol = " "
 format = "[$symbol]($style)"
