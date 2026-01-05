@@ -1,12 +1,16 @@
-background-opacity = 0.7
-macos-titlebar-style = none
+window-decoration = none
+#theme = "Kanagawabones"
+theme = "Gruvbox Dark Hard"
 
 mouse-hide-while-typing = true
 macos-option-as-alt = true
 
+background-opacity = 0.95
 
+#font-family = "Monocraft"
 font-family = "CaskaydiaCove Nerd Font Mono"
 font-thicken = true
+font-size = 14
 
 command = "/opt/homebrew/bin/tmux new-session -A -D -s dev -c /Users/akdeniz/dev/"
 keybind = clear
