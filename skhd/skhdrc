@@ -30,9 +30,8 @@ hyper - 8: yabai -m space --focus 8
 hyper - 9: yabai -m space --focus 9
 hyper - 0: yabai -m space --focus 10
 
-hyper - t : /usr/bin/open -a Kitty
+hyper - t : /usr/bin/open -a Ghostty
 hyper - f : /usr/bin/open -a 'Brave Browser'
-hyper - s : /usr/bin/open -a 'Visual Studio Code'
 hyper - g : /usr/bin/open -a 'Preview'
 rcmd + alt - f : yabai -m window --toggle float
 
