@@ -23,4 +23,5 @@ return {
 	{ "embark-theme/vim", lazy = true },
 	{ "rmehri01/onenord.nvim", lazy = true },
 	{ "luisiacc/gruvbox-baby", lazy = true },
+	{ "vv9k/bogster", lazy = true },
 }
